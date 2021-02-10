@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class AccountTest {
 
     @Test
-    public void myTest() {
+    public void newAccountShouldNotBeActiveAfterCreation() {
         //given
         //when
         Account newAccount = new Account();
@@ -15,7 +15,7 @@ public class AccountTest {
     }
 
     @Test
-    void myTest2()  {
+    void accountShouldBeActiveAfterActivation()  {
         //given
         Account newAccount = new Account();
         //when
