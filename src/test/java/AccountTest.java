@@ -7,15 +7,20 @@ public class AccountTest {
 
     @Test
     public void myTest() {
+        //given
+        //when
         Account newAccount = new Account();
+        //then
         assertFalse(newAccount.isActive(), "Check if new account is not active");
     }
 
     @Test
     void myTest2()  {
+        //given
         Account newAccount = new Account();
-        assertFalse(newAccount.isActive());
+        //when
         newAccount.activate();
+        //then
         assertTrue(newAccount.isActive());
     }
 }
