@@ -11,7 +11,7 @@ public class AccountTest {
         //when
         Account newAccount = new Account();
         //then
-        assertFalse(newAccount.isActive(), "Check if new account is not active");
+        assertThat(newAccount.isActive()).isFalse();
     }
 
     @Test
@@ -21,7 +21,7 @@ public class AccountTest {
         //when
         newAccount.activate();
         //then
-        assertTrue(newAccount.isActive());
+        assertThat(newAccount.isActive()).isTrue();
     }
 
     @Test
@@ -34,7 +34,7 @@ public class AccountTest {
 
         //then
         //assertThat(address).isNull();
-        assertNull(address);
+        assertThat(address).isNull();
     }
 
     @Test
